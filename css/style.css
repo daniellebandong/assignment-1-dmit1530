@@ -1,0 +1,33 @@
+html{
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+main > section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+h3{
+    flex-basis: 100%;
+}
+/*3 column layout
+24px gutter spacing * 2
+
+100% - 48px / 3
+
+*/
+
+section > section{
+    flex-basis: calc((100% - 48px) / 3);
+}
+
+section > section:nth-of-type(4), section > section:nth-of-type(5){
+    flex-basis: calc((100% - 24px) / 2);
+}
+
+
+
